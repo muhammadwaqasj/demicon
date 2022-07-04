@@ -1,0 +1,15 @@
+services:
+  demicon:
+    build: ./
+    restart: on-failure
+    env_file: ./.env
+    ports:
+      - $SPRING_PORT:$SPRING_PORT
+    environment:
+      SPRING_APPLICATION_JSON: '{
+        "spring.main.banner-mode"  : "off"
+      }'
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
