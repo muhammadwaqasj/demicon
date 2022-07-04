@@ -1,5 +1,8 @@
 # Demicon Test
 
+# Prerequisites
+  Docker and Docker Compose
+
 # To run both application follow below steps
 
 For Backend Application
@@ -11,5 +14,3 @@ For Frontend Application
 1. Go into the demicon-frontend folder.
 2. Start the terminal.
 3. run command docker-compose up -d
-
-
